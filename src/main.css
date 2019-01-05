@@ -1,3 +1,79 @@
 body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Space Mono', monospace;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.planetDiv {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(0,255,255,0.5);
+}
+
+.mainDiv  {
+    position: absolute;
+    top: 20vh;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.clickablesDiv, .mainCenterDiv, .shopDiv {
+    display: inline-block;
+}
+
+.clickablesDiv {
+    height: 100%;
+    width: 25vw;
+    background-color: rgba(255,0,0,0.5);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clickableDiv {
+    height: 33.3%;
+    background-color: rgba(255,0,255,0.5);
+}
+
+.clickableDiv:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.mainCenterDiv {
+    height: 100%;
+    width: 50vw;
+    background-color: rgba(0,255,0,0.5);
+}
+
+.tallyDiv {
+    height: 30%;
+    background-color: rgba(255,255,255,0.5);
+
     text-align: center;
+}
+
+.collectionDiv {
+    height: 70%;
+    background-color: rgba(255,0,255,0.5);
+}
+
+.shopDiv {
+    height: 100%;
+    width: 25vw;
+    background-color: rgba(0,0,255,0.5);
 }
