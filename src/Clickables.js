@@ -18,21 +18,29 @@ class Clickables extends Component {
   };
 
   render() {
+    const {
+      values,
+      perSec,
+    } = this.props;
+
     return (
       <div className="clickablesDiv">
         <Clickable
           text="Construct pizza mesons"
-          value={this.props.values[0]}
+          value={values[0]}
+          perSec={perSec[0]}
           onClick={this.firstClickableClicked}
         />
         <Clickable
           text="Flux pizza oven tubes"
-          value={this.props.values[1]}
+          value={values[1]}
+          perSec={perSec[1]}
           onClick={this.secondClickableClicked}
         />
         <Clickable
           text="Translocate pizza"
-          value={this.props.values[2]}
+          value={values[2]}
+          perSec={perSec[2]}
           onClick={this.lastClickableClicked}
         />
       </div>
