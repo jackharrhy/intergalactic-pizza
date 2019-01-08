@@ -18,16 +18,18 @@ class Shop extends PureComponent {
       <div className="shopDiv">
         <Tabs>
           <TabList>
-            <Tab>1</Tab>
-            <Tab>2</Tab>
-            <Tab>3</Tab>
+            <Tab>mesons</Tab>
+            <Tab>oven</Tab>
+            <Tab>translocate</Tab>
           </TabList>
           {
             [0,1,2].map((type) => (
               <TabPanel key={`${type}`}>
                 {
                   Object.values(products)
-                    .filter((product) => product.type === type)
+                    .filter((product) => {
+                      return product.type === type && (product.count > 0 || product.cost/3 < bal);
+                    })
                     .map((product) => (
                       <Product
                         key={product.name}

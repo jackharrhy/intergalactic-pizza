@@ -1,0 +1,42 @@
+{
+    "Helperbot 1x": {
+        "name": "Helperbot 1x",
+        "type": 0,
+        "desc": "he's a small one, but it'll do",
+        "perSec": 0.25,
+        "cost": 15,
+        "count": 0
+    },
+    "Helperbot 2Z": {
+        "name": "Helperbot 2Z",
+        "type": 0,
+        "desc": "",
+        "perSec": 0.75,
+        "cost": 45,
+        "count": 0
+    },
+    "AutOven 1999": {
+        "name": "AutOven 1999",
+        "type": 1,
+        "desc": "vintage heat!",
+        "perSec": 0.35,
+        "cost": 25,
+        "count": 0
+    },
+    "zBay store": {
+        "name": "zBay store",
+        "type": 2,
+        "desc": "zbids for pizza",
+        "perSec": 0.40,
+        "cost": 35,
+        "count": 0
+    },
+    "foo": {
+        "name": "foo",
+        "type": 0,
+        "desc": "",
+        "perSec": 0,
+        "cost": 0,
+        "count": 0
+    }
+}

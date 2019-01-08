@@ -10,6 +10,7 @@ class Tally extends PureComponent {
 
     return (
       <div className="tallyDiv">
+        <img alt="cartoon pizza" src="svg/pizza.svg" />
         <h1>{`${Math.floor(bal)} pizzas`}</h1>
       </div>
     );

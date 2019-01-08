@@ -27,18 +27,21 @@ class Clickables extends Component {
       <div className="clickablesDiv">
         <Clickable
           text="Construct pizza mesons"
+          imgLocation="svg/meson.svg"
           value={values[0]}
           perSec={perSec[0]}
           onClick={this.firstClickableClicked}
         />
         <Clickable
           text="Flux pizza oven tubes"
+          imgLocation="svg/oven.svg"
           value={values[1]}
           perSec={perSec[1]}
           onClick={this.secondClickableClicked}
         />
         <Clickable
           text="Translocate pizza"
+          imgLocation="svg/translocate.svg"
           value={values[2]}
           perSec={perSec[2]}
           onClick={this.lastClickableClicked}

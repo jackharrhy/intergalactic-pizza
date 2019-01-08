@@ -11,11 +11,13 @@ class Product extends PureComponent {
       desc,
       perSec,
       cost,
+      count,
       onBuy,
     } = this.props;
 
     return (
       <div className="productDiv">
+        <h5>{`${count > 0 ? count : ""}`}</h5>
         <h1>{`${name}`}</h1>
         <h3>{`${desc}`}</h3>
         <h2>{`${perSec}`}</h2>

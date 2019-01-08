@@ -5,6 +5,7 @@ import Clickables from './Clickables.js';
 import Tally from './Tally.js';
 import Collection from './Collection.js';
 import Shop from './Shop.js';
+import products from './products.json';
 
 class App extends Component {
   constructor(props) {
@@ -18,41 +19,7 @@ class App extends Component {
       clickableValues: [
         0,0,0
       ],
-
-      products: {
-        'Dough boy': {
-          name: 'Dough boy',
-          type: 0,
-          desc: 'foobar',
-          perSec: 0.25,
-          cost: 15,
-          count: 0,
-        },
-        'Big dough boy': {
-          name: 'Big dough boy',
-          type: 0,
-          desc: 'foobarbaz',
-          perSec: 0.75,
-          cost: 45,
-          count: 0,
-        },
-        'Oven man': {
-          name: 'Oven man',
-          type: 1,
-          desc: 'oven man',
-          perSec: 0.35,
-          cost: 25,
-          count: 0,
-        },
-        'Send boy': {
-          name: 'Send boy',
-          type: 2,
-          desc: 'send boy',
-          perSec: 0.40,
-          cost: 35,
-          count: 0,
-        },
-      },
+      products,
     };
   }
 
@@ -112,6 +79,7 @@ class App extends Component {
       const bal = prevState.bal - product.cost;
       prevState.perSec[product.type] += product.perSec;
       prevState.products[product.name].cost = Math.ceil(product.cost + product.cost / 6);
+      prevState.products[product.name].count += 1;
       return {
         bal,
         perSec: prevState.perSec,

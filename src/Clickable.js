@@ -9,6 +9,7 @@ class Clickable extends PureComponent {
       text,
       value,
       perSec,
+      imgLocation,
     } = this.props;
 
     return (
@@ -17,6 +18,7 @@ class Clickable extends PureComponent {
         className="clickableDiv"
       >
         <p>{`${text}`}</p>
+        <img src={imgLocation} />
         <p>{`${Math.round(value * 100) / 100} of 'em`}</p>
         <p>{`${Math.round(perSec * 100) / 100}+ per second`}</p>
       </div>
